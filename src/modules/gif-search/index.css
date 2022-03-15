@@ -1,0 +1,15 @@
+.list-gifs {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+.search-box {
+    padding: 1rem;
+    background: lightgray;
+    margin-bottom: 1rem;
+}
+
+.gif {
+    padding-right: 0.2rem;
+}
