@@ -7,10 +7,10 @@ export const InputBox = styled.input`
     border-radius: 4px;
     border: 1px solid transparent;
     padding: 8px;
-    width: ${props => (props.width ? props.width : '50%')}
+    width: 50%;
 
     @media screen and (max-width: 480px) {
-        width: 100%
+        width: 100%;
     }
 `;
 
