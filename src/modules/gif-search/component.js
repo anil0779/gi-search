@@ -72,7 +72,7 @@ const App = () => {
     return (
         <div className="gif-search-container">
             <div className="search-box">
-                <InputBox width={isMobile ? '100%' : '40%'} type='text' placeholder="Enter keywords" value={searchInput} onChange={updateSearchInput} />
+                <InputBox type='text' placeholder="Enter keywords" value={searchInput} onChange={updateSearchInput} />
                 <Button type="button" value={'search'} onClick={handleSubmit} disabled={loading}/>
             </div>
              <List list={list}/>
