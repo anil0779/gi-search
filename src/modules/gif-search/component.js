@@ -12,7 +12,7 @@ const App = () => {
     const [totalCount, setTotalCount] = useState(100); // will be overwriiten from api
     const [offset, setOffset] = useState(0);
     const [lastElement, setLastElement] = useState(null);
-    // const isMobile = useCheckMobileScreen();
+    const isMobile = useCheckMobileScreen();
 
     const observer = useRef(
         new IntersectionObserver(
@@ -72,7 +72,7 @@ const App = () => {
     return (
         <div className="gif-search-container">
             <div className="search-box">
-                <InputBox width={'40%'} type='text' placeholder="Enter keywords" value={searchInput} onChange={updateSearchInput} />
+                <InputBox width={isMobile ? '100%' : '40%'} type='text' placeholder="Enter keywords" value={searchInput} onChange={updateSearchInput} />
                 <Button type="button" value={'search'} onClick={handleSubmit} disabled={loading}/>
             </div>
              <List list={list}/>
