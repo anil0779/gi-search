@@ -1,3 +1,4 @@
+import React from 'react';
 import './App.css';
 import GifSearch from './modules/gif-search';
 
